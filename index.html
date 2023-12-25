@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+    html,body {
+      height: 100dvh;
+      margin: 0;
+      font-family: 'Open Sans', Helvetica;
+    }
+
+    main {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rebeccapurple;
+    }
+
+    .coupon {
+      width: min(100%, 40ch);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 1em;
+      border: 2px dashed black;
+      background-color: white;
+      grid-row-gap: 0.5em;
+      grid-column-gap: 0.5em;
+      text-align: justify;
+    }
+
+    .lg {
+      grid-row: span 2;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .sm {
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="coupon">
+      <p class="lg">Windshield Wiper Replacement at Valvoline</p>
+      <p>This coupon is good for a replacement of windshield wipers on any one car, at the date and time of your choosing, at Valvoline on North 21st St, Newark OH 43055.</p>
+      <p class="sm">Expires 1/31</p>
+    </div>
+  </main>
+  
+</body>
+</html>
